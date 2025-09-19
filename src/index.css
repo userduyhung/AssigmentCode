@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Montserrat font optimization for Vietnamese */
+@layer base {
+  html {
+    font-family: 'Montserrat', 'Source Sans Pro', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', 'Montserrat', system-ui, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+  }
+  
+  /* Better Vietnamese character rendering with Montserrat */
+  * {
+    text-rendering: optimizeLegibility;
+    -webkit-font-feature-settings: "liga", "kern";
+    font-feature-settings: "liga", "kern";
+  }
+  
+  /* Montserrat specific improvements */
+  .font-display {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+}

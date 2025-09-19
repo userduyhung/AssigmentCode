@@ -7,6 +7,7 @@ import Interactive from './pages/Interactive';
 import AITools from './pages/AITools';
 import RealWorldUpdates from './pages/RealWorldUpdates';
 import Chatbot from './components/Chatbot';
+import BotpressChat from './components/BotpressChat';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           </Routes>
         </main>
         <Chatbot />
+        <BotpressChat />
       </div>
     </Router>
   );

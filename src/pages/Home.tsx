@@ -2,6 +2,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { ArrowRight, BookOpen, Gamepad2, Sparkles, TrendingUp } from 'lucide-react';
+import Footer from '../components/Footer';
 
 const Home = () => {
   // Tự động scroll xuống cuối nếu có query scroll=features
@@ -57,6 +58,56 @@ const Home = () => {
 
   return (
     <>
+
+      {/* New Hero Section - Niềm tin nhân dân */}
+      <section className="relative py-20 text-white overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <div 
+            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url('https://hdll.vn/FileUpload/Images/images_64.jpg')`
+            }}
+          ></div>
+          {/* Dark overlay to make text readable */}
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Headline */}
+          <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-12 text-white leading-tight tracking-tight">
+            Niềm tin nhân dân – <span className="whitespace-nowrap">sức mạnh sống còn</span> của Đảng
+          </h1>
+          
+          {/* Quote */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 mb-12 border border-white/20">
+            <div className="text-6xl text-yellow-400 mb-4">❝</div>
+            <blockquote className="font-body text-2xl md:text-3xl font-medium italic leading-relaxed text-white mb-6 tracking-wide">
+              Trong bầu trời không gì quý bằng nhân dân. <br />
+              Trong thế giới không gì mạnh bằng đoàn kết nhân dân.
+            </blockquote>
+            <div className="text-6xl text-yellow-400 mb-4 transform rotate-180">❝</div>
+            <cite className="font-heading text-xl text-yellow-300 font-semibold tracking-wide">– Hồ Chí Minh</cite>
+          </div>
+          
+          {/* Subline */}
+          <p className="font-body text-lg md:text-xl lg:text-2xl mb-12 text-blue-100 max-w-5xl mx-auto leading-relaxed px-4 tracking-wide">
+            Hồ Chí Minh cảnh báo: quan liêu, tham nhũng, xa dân sẽ làm mất lòng tin của <span className="whitespace-nowrap">nhân dân.</span>
+          </p>
+          
+          {/* CTA Button */}
+          <div className="flex justify-center">
+            <Link
+              to="/theory"
+              className="group bg-gradient-to-r from-yellow-400 to-yellow-500 text-slate-900 px-8 py-4 rounded-full font-bold text-lg hover:from-yellow-300 hover:to-yellow-400 transition-all duration-300 flex items-center space-x-3 shadow-2xl hover:shadow-yellow-500/25 transform hover:-translate-y-1"
+            >
+              <span>Khám phá</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section - Đặt vấn đề */}
       <section className="relative overflow-hidden bg-gradient-to-br from-red-700 via-yellow-500 to-red-500 text-white">
         <div className="absolute inset-0 bg-black/20"></div>
@@ -80,6 +131,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      
 
       {/* Niềm tin nhân dân – Nền tảng của sự lãnh đạo */}
       <section className="py-16 bg-gradient-to-b from-yellow-50 to-white">
@@ -157,58 +210,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Interactive Section - Các phần tương tác */}
-      <section className="py-16 bg-gradient-to-b from-white to-blue-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-8 text-center">Phần Tương tác</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Quiz nhanh */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-blue-200 flex flex-col items-center">
-              <h3 className="text-xl font-bold text-blue-700 mb-4">Quiz chủ đề</h3>
-              <Link
-                to="/interactive"
-                className="bg-blue-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-700 transition-all duration-200 inline-flex items-center space-x-2"
-              >
-                <span>Xem chi tiết</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-            {/* Chatbot mini */}
-
-            {/* <div className="bg-white rounded-xl shadow-lg p-8 border border-blue-200 flex flex-col items-center">
-              <h3 className="text-xl font-bold text-blue-700 mb-4">Chatbot mini</h3>
-              <div className="w-full h-40 bg-blue-50 rounded-lg p-4 mb-4 flex flex-col justify-end">
-                <div className="mb-2 text-gray-700 text-left"><span className="font-semibold">Bạn:</span> Làm sao để Đảng giữ được niềm tin của nhân dân?</div>
-                <div className="mb-2 text-blue-700 text-left"><span className="font-semibold">Chatbot:</span> Đường lối đúng đắn, cán bộ trong sạch, gắn bó mật thiết với nhân dân.</div>
-                <div className="mb-2 text-gray-700 text-left"><span className="font-semibold">Bạn:</span> Quan liêu, tham nhũng gây ra hậu quả gì?</div>
-                <div className="mb-2 text-blue-700 text-left"><span className="font-semibold">Chatbot:</span> Làm mất lòng tin của nhân dân, dẫn đến bất ổn và suy yếu Đảng.</div>
-              </div>
-              <input type="text" className="w-full px-4 py-2 rounded-lg border border-blue-200" placeholder="Nhập câu hỏi..." disabled />
-            </div> */}
-
-            {/* Flashcard AI */}
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-blue-200 flex flex-col items-center">
-              <h3 className="text-xl font-bold text-blue-700 mb-4">Flashcard AI</h3>
-              <div className="w-full grid grid-cols-1 gap-4">
-                <div className="bg-blue-50 rounded-lg p-4 text-left">
-                  <div className="font-semibold text-blue-700 mb-2">Định nghĩa: Quan liêu</div>
-                  <div className="text-gray-700">Căn bệnh xa dân, không lắng nghe ý kiến của dân, làm việc theo lối hành chính, máy móc.</div>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 text-left">
-                  <div className="font-semibold text-blue-700 mb-2">Ví dụ: Tham nhũng</div>
-                  <div className="text-gray-700">Lợi dụng chức vụ, quyền hạn để vụ lợi cá nhân, làm giàu bất chính.</div>
-                </div>
-                <div className="bg-blue-50 rounded-lg p-4 text-left">
-                  <div className="font-semibold text-blue-700 mb-2">Bài học: Xa rời quần chúng</div>
-                  <div className="text-gray-700">Không sống, làm việc và chiến đấu vì dân sẽ bị dân quay lưng.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
     {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
@@ -291,6 +292,9 @@ const Home = () => {
           </div>
         </div>
       </section>
+      
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
