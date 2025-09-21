@@ -30,13 +30,6 @@ const Theory: React.FC = () => {
         <span className="inline-block w-24 h-1 bg-blue-300 rounded-full"></span>
       </div>
       <Card>
-        <h3 className="text-lg font-semibold mb-2 text-blue-700">A. Đặt vấn đề/câu hỏi kiến tạo</h3>
-        <p className="mb-2">Niềm tin của nhân dân đối với Đảng cầm quyền là yếu tố then chốt quyết định sự tồn tại và phát triển của Đảng.</p>
-        <Quote>Hồ Chí Minh đã cảnh báo rằng Đảng cầm quyền có thể mất lòng tin của nhân dân nếu sa vào quan liêu, tham nhũng, và xa rời nhân dân.</Quote>
-        <p className="mb-2">Tư tưởng của Hồ Chí Minh về xây dựng Đảng rất rõ ràng, và niềm tin của nhân dân phải luôn là nền tảng vững chắc để Đảng tồn tại và lãnh đạo.</p>
-        <p className="mb-2">Chủ đề này khuyến khích sinh viên phân tích thực tiễn và đưa ra giải pháp thiết thực để Đảng vững mạnh, trong sạch, và gắn bó với nhân dân.</p>
-      </Card>
-      <Card>
         <h3 className="text-lg font-semibold mb-2 text-blue-700">Đặt vấn đề</h3>
         <Quote>“Đảng là đạo đức, là văn minh”. Nhưng Người cũng cảnh báo: nếu Đảng cầm quyền sa vào bệnh quan liêu, tham nhũng, xa dân thì “nguy cơ mất lòng tin của nhân dân là hiện hữu”.</Quote>
         <p className="mb-2">Niềm tin của nhân dân chính là nguồn sức mạnh to lớn, là chỗ dựa vững chắc để Đảng tồn tại, phát triển và lãnh đạo đất nước. Vì vậy, việc giữ gìn và củng cố lòng tin này không chỉ là yêu cầu chính trị, mà còn là vấn đề sống còn.</p>
