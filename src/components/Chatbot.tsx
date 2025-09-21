@@ -127,8 +127,9 @@ Hy vọng thông tin này hữu ích cho bạn!"`;
       timestamp: new Date()
     };
     setMessages(prev => [...prev, userMessage]);
+    setInputText(''); // Clear input immediately after sending
     setLoading(true);
-    const botReply = await fetchGeminiResponse(inputText);
+    const botReply = await fetchGeminiResponse(userMessage.text);
     const botMessage: Message = {
       id: messages.length + 2,
       text: botReply,
@@ -137,7 +138,6 @@ Hy vọng thông tin này hữu ích cho bạn!"`;
     };
     setMessages(prev => [...prev, botMessage]);
     setLoading(false);
-    setInputText('');
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
