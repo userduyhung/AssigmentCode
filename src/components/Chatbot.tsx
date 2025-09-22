@@ -13,7 +13,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Xin chào! Tôi là trợ lý AI chuyên về Tư tưởng Hồ Chí Minh. 🇻🇳\n\nTôi có thể giúp bạn:\n• Tìm hiểu tư tưởng, triết lý của Bác Hồ\n• Nghiên cứu lịch sử cách mạng Việt Nam\n• Ứng dụng đạo đức cách mạng trong cuộc sống\n• Hiểu về giáo dục, văn hóa dân tộc\n\nHãy đặt câu hỏi về những chủ đề này nhé!",
+      text: "Xin chào! Tôi là trợ lý AI chuyên về Tư tưởng Hồ Chí Minh. \n\nTôi có thể giúp bạn:\n• Tìm hiểu tư tưởng, triết lý của Bác Hồ\n• Nghiên cứu lịch sử cách mạng Việt Nam\n• Ứng dụng đạo đức cách mạng trong cuộc sống\n• Hiểu về giáo dục, văn hóa dân tộc\n\nHãy đặt câu hỏi về những chủ đề này nhé!",
       sender: 'bot',
       timestamp: new Date()
     }
