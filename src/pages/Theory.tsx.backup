@@ -1,4 +1,5 @@
 
+
 import React, { useState } from "react";
 // import { useEffect } from "react";
 
@@ -29,11 +30,16 @@ const Theory: React.FC = () => {
         <span className="inline-block w-24 h-1 bg-blue-300 rounded-full"></span>
       </div>
       <Card>
+        <h3 className="text-lg font-semibold mb-2 text-blue-700">Đặt vấn đề</h3>
+        <Quote>“Đảng là đạo đức, là văn minh”. Nhưng Người cũng cảnh báo: nếu Đảng cầm quyền sa vào bệnh quan liêu, tham nhũng, xa dân thì “nguy cơ mất lòng tin của nhân dân là hiện hữu”.</Quote>
+        <p className="mb-2">Niềm tin của nhân dân chính là nguồn sức mạnh to lớn, là chỗ dựa vững chắc để Đảng tồn tại, phát triển và lãnh đạo đất nước. Vì vậy, việc giữ gìn và củng cố lòng tin này không chỉ là yêu cầu chính trị, mà còn là vấn đề sống còn.</p>
+      </Card>
+      <Card>
         <h3 className="text-lg font-semibold mb-2 text-blue-700">Niềm tin nhân dân – nền tảng của sự lãnh đạo</h3>
         <ul className="list-disc pl-6 mb-2">
           <li><span className="font-medium">Trong Tư tưởng Hồ Chí Minh, dân là gốc.</span> Người khẳng định:</li>
         </ul>
-        <Quote>"Trong bầu trời không gì quý bằng nhân dân. Trong thế giới không gì mạnh bằng lực lượng đoàn kết của nhân dân".</Quote>
+        <Quote>“Trong bầu trời không gì quý bằng nhân dân. Trong thế giới không gì mạnh bằng lực lượng đoàn kết của nhân dân”.</Quote>
         <ul className="list-decimal pl-6 mb-2">
           <li>Đường lối đúng đắn phục vụ lợi ích dân tộc, nhân dân.</li>
           <li>Đội ngũ cán bộ, đảng viên gương mẫu, trong sạch.</li>
@@ -64,7 +70,7 @@ const Theory: React.FC = () => {
             detail: (
               <>
                 <p className="mb-2">Tham nhũng làm xói mòn đạo đức, làm giàu bất chính trên mồ hãm của nhân dân, phá hoại niềm tin của dân vào sự công bằng, minh bạch của xã hội.</p>
-                <Quote>"Cách xa dân chúng, không liên hệ chặt chẽ với dân chúng, cũng như đứng lơ lửng giữa trời, nhất định thất bại". Mất lòng tin là mất tất cả. (Trích giáo trình page 136)</Quote>
+                <Quote>“Cách xa dân chúng, không liên hệ chặt chẽ với dân chúng, cũng như đứng lơ lửng giữa trời, nhất định thất bại”. Mất lòng tin là mất tất cả. (Trích giáo trình page 136)</Quote>
               </>
             )
           },
@@ -153,7 +159,7 @@ const Theory: React.FC = () => {
           <Card className="bg-gray-50">
             <h4 className="font-bold text-gray-700 mb-2">Hậu quả: Mất niềm tin và bất ổn chính trị kéo dài</h4>
             <p className="text-sm">Sự mất lòng tin của nhân dân thể hiện qua các cuộc biểu tình, sự thờ ơ chính trị và kết quả bầu cử, nơi các đảng truyền thống mất dần sự ủng hộ vào tay các đảng phái mới nổi. Sự bất ổn kéo dài khiến Nepal không thể thực hiện các cải cách kinh tế - xã hội quan trọng.</p>
-            <Quote>"Dễ mười lần không dân cũng chịu, khó trăm lần dân liệu cũng xong". Khi có được lòng tin của dân, Đảng có thể vượt qua mọi khó khăn. Nhưng khi đã đánh mất nó, dù nhiệm vụ dễ dàng đến đâu cũng không thể hoàn thành.</Quote>
+            <Quote>“Dễ mười lần không dân cũng chịu, khó trăm lần dân liệu cũng xong”. Khi có được lòng tin của dân, Đảng có thể vượt qua mọi khó khăn. Nhưng khi đã đánh mất nó, dù nhiệm vụ dễ dàng đến đâu cũng không thể hoàn thành.</Quote>
           </Card>
         </div>
       </Card>
